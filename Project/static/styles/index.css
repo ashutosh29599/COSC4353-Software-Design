@@ -27,6 +27,8 @@ body {
     width: auto;
 }
 
+/* Index/ Sign in page */
+
 .login_form {
     border-radius: 5px;
     background-color: rgba(71, 71, 71, 0.637);
@@ -65,7 +67,8 @@ body {
 
 .login_buttons {
     padding: 10px;
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 input[type=text]{
@@ -115,7 +118,7 @@ border: 1px solid #555;
 }
 
 .signup_form button {
-    margin-left: 10px;
+    margin: 10px;
 
     padding: 8px 15px;
     border: none;
@@ -126,5 +129,7 @@ border: 1px solid #555;
 
 .signup_buttons {
     padding: 10px;
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
 }
+
