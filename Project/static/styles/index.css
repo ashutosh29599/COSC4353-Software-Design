@@ -133,3 +133,56 @@ border: 1px solid #555;
     justify-content: center;
 }
 
+/* Client Profile Management Page */
+
+.client_mgmt_form {
+    border-radius: 5px;
+    background-color: rgba(71, 71, 71, 0.637);
+    float: right;
+    margin: 25px 4px;
+    right: 140px;
+    top: 200px;
+    padding: 20px;
+    position: relative;
+    width: 350px;
+}
+
+.client_mgmt_title {
+    color: rgb(217, 255, 0);
+    text-align: center;
+    font-size: 25px;
+}
+
+.client_mgmt_form label {
+    float: left;
+}
+
+.client_mgmt_form input {
+    float: right;
+}
+
+.client_mgmt_form button {
+
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.client_mgmt_form select {
+    float: right;
+}
+
+.client_mgmt_buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+
