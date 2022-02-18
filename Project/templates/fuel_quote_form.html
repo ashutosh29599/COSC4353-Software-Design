@@ -2,9 +2,9 @@
 
 <html>
     <head>
-        <!-- <link rel="stylesheet" href="{{ url_for('static',filename='../styles/index.css') }}"> -->.
+        <!-- <link rel="stylesheet" href="{{ url_for('static',filename='../styles/index.css') }}"> -->
         <link rel="stylesheet" href="../static/styles/index.css">
-        <title> SAMPLE TITLE </title>
+        <title> Fuel Quote Form </title>
     </head>
 
     <body>
@@ -22,25 +22,25 @@
             <br><br>
 
             <label for="Gallons_Requested">Gallons Requested:</label>
-            <input type="text" id="username" placeholder="username">
+            <input type="number" placeholder="0.0" required>
             <br><br>
 
             <label for="Delivery_Address">Delivery Address: </label>
-            <input type="password" id="password" placeholder="password">
+            <input type="text" value="Address" readonly>
             <br><br>
 
             <label for="Delivery_Date">Delivery Date: </label>
-            <input type="date" id="password" placeholder="password">
+            <input type="date" placeholder="01/01/2000">
             <br><br>
 
-            <label for="Suggested_Price">Suggested Price: </label>
-            <input type="password" id="password" placeholder="password">
+            <label for="Price_per_gallon">Price/Gallon: </label>
+            <input type="number" value="0.00" readonly>
             <br><br>
 
-            <div class="login_buttons">
-                <button type="login_button">Log in!</button>
-                <button type="signup_button">Sign up!</button>
-            </div>
+            <label for="total_amount">Total Amount: </label>
+            <input type="number" value="0.00" readonly>
+            <br><br>
+
         </div>
     </body>
 </html>

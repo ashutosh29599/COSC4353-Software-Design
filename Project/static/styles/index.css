@@ -196,7 +196,7 @@ border: 1px solid #555;
     top: 200px;
     padding: 20px;
     position: relative;
-    width: 250px;
+    width: 300px;
 }
 
 .fuel_quote_form_title {
@@ -211,6 +211,7 @@ border: 1px solid #555;
 
 .fuel_quote_form input {
     float: right;
+    width: 125px;
 }
 
 /* Fuel Quote History*/
