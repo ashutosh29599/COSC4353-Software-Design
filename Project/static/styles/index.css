@@ -185,4 +185,59 @@ border: 1px solid #555;
     color: red;
 }
 
+/* Fuel Quote Form */ 
 
+.fuel_quote_form {
+    border-radius: 5px;
+    background-color: rgba(71, 71, 71, 0.637);
+    float: right;
+    margin: 25px 4px;
+    right: 140px;
+    top: 200px;
+    padding: 20px;
+    position: relative;
+    width: 250px;
+}
+
+.fuel_quote_form_title {
+    color: rgb(217, 255, 0);
+    text-align: center;
+    font-size: 25px;
+}
+
+.fuel_quote_form label {
+    float: left;
+}
+
+.fuel_quote_form input {
+    float: right;
+}
+
+/* Fuel Quote History*/
+
+.quote_hist {
+    border-radius: 5px;
+    background-color: rgba(71, 71, 71, 0.637);
+    float: right;
+    margin: 25px 4px;
+    right: 140px;
+    top: 200px;
+    padding: 20px;
+    position: relative;
+    width: 400px;
+}
+
+
+.quote_hist table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+.quote_hist td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+  
