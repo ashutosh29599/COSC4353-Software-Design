@@ -21,27 +21,39 @@
                 Fuel Quote Form
             </div>
             <br><br>
+        
+            <form method="POST" action="#">
+                <label for="gallons_requested">Gallons Requested:</label>
+                <input type="number" name="gallons_requested" placeholder="0.0" required>
+                <br><br>
 
-            <label for="Gallons_Requested">Gallons Requested:</label>
-            <input type="number" placeholder="0.0" required>
-            <br><br>
+                <label for="delivery_address">Delivery Address: </label>
+                <input type="text" name="delivery_address" value="Address" readonly>
+                <br><br>
 
-            <label for="Delivery_Address">Delivery Address: </label>
-            <input type="text" value="Address" readonly>
-            <br><br>
+                <label for="delivery_date">Delivery Date: </label>
+                <input type="date" name="delivery_date" placeholder="01/01/2000" required>
+                <br><br>
 
-            <label for="Delivery_Date">Delivery Date: </label>
-            <input type="date" placeholder="01/01/2000">
-            <br><br>
+                <label for="price_per_gallon">Price/Gallon: </label>
+                <input type="number" name="price_per_gallon" value="0.00" readonly>
+                <br><br>
 
-            <label for="Price_per_gallon">Price/Gallon: </label>
-            <input type="number" value="0.00" readonly>
-            <br><br>
+                <label for="total_amount">Total Amount: </label>
+                <input type="number" name="total_amount" value="0.00" readonly>
+                <br><br>
 
-            <label for="total_amount">Total Amount: </label>
-            <input type="number" value="0.00" readonly>
-            <br><br>
+                <div class="fuel_quote_form_button">
+                    <button type="submit" name="login" value="Submit">Submit!</button> 
+                </div>
 
+            </form>
+
+            <div class="output_msg">
+                {% if message %}
+                    <p>{{ message }}</p>
+                {% endif %}
+            </div>
         </div>
     </body>
 </html>
