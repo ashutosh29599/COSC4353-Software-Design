@@ -2,7 +2,7 @@ import unittest
 from app import app
 
 # To run: python test.py
-# For coverage: coverage test.py
+# For coverage: coverage run test.py
 # For coverage report: coverage report
 
 
@@ -12,13 +12,10 @@ class BasicTestCase(unittest.TestCase):
         response = tester.get('/', content_type='/')
         self.assertEqual(response.status_code, 200)
 
-    
     def test_signup(self):
         tester = app.test_client(self)
         response = tester.get('/signup', content_type='/signup')
         self.assertEqual(response.status_code, 200)
-
-
 
     def test_client_profile_mgmt(self):
         tester = app.test_client(self)

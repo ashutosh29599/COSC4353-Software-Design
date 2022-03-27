@@ -1,21 +1,46 @@
-from flask import Flask, render_template, request, url_for, session, redirect, flash
+from flask import Flask, render_template, request, url_for, g, session, redirect, flash
 import price_module
+
+import psycopg2
+from psycopg2.extras import RealDictCursor
+from psycopg2 import pool
+import random, string
 
 
 app = Flask(__name__)
 app.secret_key ="123"
 
+
+app.config['postgreSQL_pool'] = psycopg2.pool.SimpleConnectionPool(1, 20,
+                                                                   user="postgres",
+                                                                   password="postgres29",
+                                                                   host="localhost",
+                                                                   port=5432,
+                                                                   database="fuel_app")
+
+def get_db():
+    if 'db' not in g:
+        g.db = app.config['postgreSQL_pool'].getconn()
+    return g.db
+
+@app.teardown_appcontext
+def close_conn(e):
+    db = g.pop('db', None)
+    if db is not None:
+        app.config['postgreSQL_pool'].putconn(db)
+
+
+
 @app.route('/', methods=['POST', 'GET'])
 def index():
     if request.method == "POST":
-        if request.form['login'] == 'Log in':
+        if request.form.get('login') == 'Log in':
             username = request.form.get('username')
             password = request.form.get('password')
             return render_template('index.html')
         
-        elif request.form['signup'] == 'Sign up':
-            return redirect(url_for(signup))
-        
+        elif request.form.get('signup') == 'Sign up':
+            return redirect(url_for("signup"))
 
     else: # method == GET
         return render_template('index.html')
@@ -105,4 +130,4 @@ def fuel_quote_history():
 
 # wsgi_app = app.wsgi_app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
