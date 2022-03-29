@@ -11,7 +11,9 @@
         <header>
             <div class="top_header">
                 <!-- <img src="../static/images/logo_2.png" alt="Company Logo" class="company_logo"> -->
-                <img src="{{ url_for('static', filename='images/logo_2.png') }}" alt="Company Logo" class="company_logo">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='images/logo_2.png') }}" alt="Company Logo" class="company_logo">
+                </a>
             </div>
         </header>
 
@@ -33,7 +35,7 @@
                 <br><br>
 
                 <label for="address2">Address (Line 2): </label>
-                <input type="text" name="address2" value="{{ address2 }}" placeholder="Address (Line 2)" maxlength="100" required>
+                <input type="text" name="address2" value="{{ address2 }}" placeholder="Address (Line 2)" maxlength="100">
                 <br><br>
 
                 <label for="city">City: </label>

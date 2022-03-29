@@ -11,7 +11,9 @@
         <header>
             <div class="top_header">
                 <!-- <img src="../static/images/logo_2.png" alt="Company Logo" class="company_logo"> -->
-                <img src="{{ url_for('static', filename='images/logo_2.png') }}" alt="Company Logo" class="company_logo">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='images/logo_2.png') }}" alt="Company Logo" class="company_logo">
+                </a>
             </div>
         </header>
 
@@ -44,9 +46,11 @@
             </form>
 
             <div class="flash_msg">
-                {% for output_msg in get_flashed_messages() %}
-                  <p>{{ output_msg }}</p>
-                {% endfor %}
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% for category, output_msg in messages %}
+                    <div class="alert {{category}}"> <p>{{ output_msg }}</p> </div>
+                    {% endfor %}
+                {% endwith %}
             </div>
         </div>
     </body>

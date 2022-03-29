@@ -11,7 +11,9 @@
         <header>
             <div class="top_header">
                 <!-- <img src="../static/images/logo_2.png" alt="Company Logo" class="company_logo"> -->
-                <img src="{{ url_for('static', filename='images/logo_2.png') }}" alt="Company Logo" class="company_logo">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='images/logo_2.png') }}" alt="Company Logo" class="company_logo">
+                </a>
             </div>
         </header>
 
@@ -28,7 +30,7 @@
                 <br><br>
 
                 <label for="delivery_address">Delivery Address: </label>
-                <input type="text" name="delivery_address" value="Address" readonly>
+                <input type="text" name="delivery_address" value=" {{ deli_address }} " readonly>
                 <br><br>
 
                 <label for="delivery_date">Delivery Date: </label>
