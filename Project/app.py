@@ -14,7 +14,6 @@ import random, string
 app = Flask(__name__)
 app.secret_key ="123"
 
-
 app.config['postgreSQL_pool'] = psycopg2.pool.SimpleConnectionPool(1, 20,
                                                                    user="postgres",
                                                                    password="postgres29",
@@ -40,8 +39,6 @@ def close_conn(e):
         app.config['postgreSQL_pool'].putconn(db)
 
 
-
-
 @app.route('/', methods=['POST', 'GET'])
 def index():
     session['signed_in'] = False
@@ -49,7 +46,7 @@ def index():
         if request.form.get('login') == 'Log in':
             username = request.form.get('username')
             password = request.form.get('password')
-
+            
             command = f"SELECT * FROM customer\
                         WHERE username = '{username}' \
                         AND password =  '{password}';"
@@ -58,7 +55,10 @@ def index():
             cursor.execute(command)
             table_data = cursor.fetchone()
             cursor.close()
+            print(table_data)
 
+            # pw_hash = bcrypt.generate_password_hash(table_data[3]) # table_data[3] is the pwd
+            # print(table_data)
 
             if table_data is None: # incorrect username or pwd
                 output_msg = "Incorrect username or password. Please try again!"
@@ -66,7 +66,8 @@ def index():
                 return redirect(url_for("index"))
             else:   # correct username and pwd
                 session['signed_in'] = True
-                return redirect(url_for("client_profile_management"))
+                # return redirect(url_for("client_profile_management"))
+                return redirect(url_for('logged_in'))
 
             # return render_template('index.html')
             # return redirect(url_for("index"))
@@ -138,6 +139,24 @@ def signup():
     return render_template('signup.html')
 
 
+@app.route('/logged_in', methods=["POST", "GET"])
+def logged_in():
+    output_msg = "You've successfully logged in! You will now need to \
+                complete your profile if you haven't done so before you can request a quote!"
+    flash(output_msg, 'error')
+
+    if request.method == "POST":
+        if request.form.get('manage_profile') == 'Manage Profile':
+            return redirect(url_for("client_profile_management"))
+        
+        # elif request.form.get('fuel_quote_form') == 'Fuel Quote Form':
+        #     return redirect(url_for("fuel_quote_form"))
+
+        elif request.form.get('fuel_quote_history') == 'Fuel Quote History':
+            return redirect(url_for("fuel_quote_history"))
+
+    return render_template('logged_in.html')
+
 @app.route('/client_profile_management', methods=["POST", "GET"])
 def client_profile_management():
     if request.method == "POST":
@@ -148,7 +167,7 @@ def client_profile_management():
         session['state'] = request.form.get('state')
         session['zipcode'] = request.form['zipcode']
     
-        # Zipcode should be 5 digits long
+        # Zipcode should be 5 digits long/
         zip_count = 0
         for _ in session['zipcode']:
             zip_count += 1

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+        <!-- <link rel="stylesheet" href="../static/styles/index.css"> -->
+        <title> AshNee Fuel Co. </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="top_header">
+                <!-- <img src="../static/images/logo_2.png" alt="Company Logo" class="company_logo"> -->
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='images/logo_2.png') }}" alt="Company Logo" class="company_logo">
+                </a>
+            </div>
+        </header>
+
+        
+        
+
+        <div class="logged_in_form">
+            <!-- <div class="login_form_title">
+                Log in!
+            </div> -->
+            <!-- <br><br> -->
+            <div class="flash_msg">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% for category, output_msg in messages %}
+                    <div class="alert {{category}}"> <p>{{ output_msg }}</p> </div>
+                    {% endfor %}
+                {% endwith %}
+            </div>
+
+
+            <form method="POST" action="">
+                <div class="logged_in_btn">
+                    <button type="submit" name="manage_profile" value="Manage Profile">Manage Profile</button>
+                    <!-- <button type="submit" name="fuel_quote_form" value="Fuel Quote Form">Fuel Quote Form</button> -->
+                    <button type="submit" name="fuel_quote_history" value="Fuel Quote History">Fuel Quote History</button>
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>

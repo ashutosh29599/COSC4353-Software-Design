@@ -270,6 +270,34 @@ border: 1px solid #555;
     padding: 8px;
 }
   
+
+
+.logged_in_form {
+    border-radius: 5px;
+    background-color: rgba(71, 71, 71, 0.637);
+    float: right;
+    margin: 25px 4px;
+    right: 140px;
+    top: 200px;
+    padding: 20px;
+    position: relative;
+    width: 275px;
+}
+
+.logged_in_btn {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.logged_in_btn button {
+    border-radius: 4px;
+    margin: 8px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
 .alert.error {
     color: white;
     background-color: rgba(9, 66, 255, 0.568);
