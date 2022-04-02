@@ -8,11 +8,14 @@ from psycopg2.extras import RealDictCursor
 from psycopg2 import pool
 import random, string
 
+from flask_bcrypt import Bcrypt
+
 # from wtforms import Form, BooleanField, StringField, PasswordField, validators
 
 
 app = Flask(__name__)
 app.secret_key ="123"
+bcrypt = Bcrypt(app)
 
 app.config['postgreSQL_pool'] = psycopg2.pool.SimpleConnectionPool(1, 20,
                                                                    user="postgres",
@@ -46,21 +49,17 @@ def index():
         if request.form.get('login') == 'Log in':
             username = request.form.get('username')
             password = request.form.get('password')
-            
-            command = f"SELECT * FROM customer\
-                        WHERE username = '{username}' \
-                        AND password =  '{password}';"
+
+            command = f"SELECT password FROM customer\
+                        WHERE username = '{username}';" # Fetching the password hash 
+
             db = get_db()
             cursor = db.cursor()
             cursor.execute(command)
-            table_data = cursor.fetchone()
+            table_data = cursor.fetchone()  # table_data[0] is the pwd hash
             cursor.close()
-            print(table_data)
-
-            # pw_hash = bcrypt.generate_password_hash(table_data[3]) # table_data[3] is the pwd
-            # print(table_data)
-
-            if table_data is None: # incorrect username or pwd
+        
+            if not bcrypt.check_password_hash(table_data[0], password): # incorrect username or pwd
                 output_msg = "Incorrect username or password. Please try again!"
                 flash(output_msg, 'error')
                 return redirect(url_for("index"))
@@ -92,7 +91,8 @@ def signup():
     if request.method == "POST":
         if request.form.get('register') == 'Register':
             session['username'] = request.form.get('username')
-            session['password'] = request.form.get('password')
+            encrypted_pwd = bcrypt.generate_password_hash(request.form.get('password')).decode('utf-8')
+            session['password'] = encrypted_pwd
             
             db = get_db()
             cursor = db.cursor()
