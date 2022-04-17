@@ -13,6 +13,13 @@ from flask_bcrypt import Bcrypt
 # from wtforms import Form, BooleanField, StringField, PasswordField, validators
 
 
+# Testing Pricing Module! Works!
+# price = price_module.Pricing_module().calcPrice('tx', 'yes', 1500)
+# print(f'The price per gallon is ${price}!')
+# print(f'Total amount: 1500 * {price} = ${1500 * price:.2f}!')
+
+
+
 app = Flask(__name__)
 app.secret_key ="123"
 bcrypt = Bcrypt(app)
@@ -214,11 +221,19 @@ def fuel_quote_form():
         gallons_requested = request.form['gallons_requested']
         # delivery_address = request.form['delivery_address']
         delivery_date = request.form['delivery_date']
-        price_per_gallon = request.form['price_per_gallon']
+        # price_per_gallon = request.form['price_per_gallon']
         total_amount = request.form['total_amount']
     
         # print(gallons_requested, delivery_address, delivery_date)
         # print(price_per_gallon, total_amount)
+        
+        #   TODO: remove price per gallon. Show after the user click submit
+
+        # TODO: Update session_hist here by checking
+        price_p_gal = price_module.Pricing_module().calcPrice(session['state'],\
+                        session['hist'], gallons_requested)
+
+
 
         message = 'Your quotation request has been submitted!'
 
