@@ -16,14 +16,14 @@ class Pricing_module:
             hist_factor = 0.01
 
         gal_req_factor = 0.03
-        if gal_requested > 1000:
+        if float(gal_requested) > 1000:
             gal_req_factor = 0.02
         
         margin = self.current_price * (location_factor - hist_factor + \
                 gal_req_factor + self.company_profit_factor)
         
         self.price_p_gallon = self.current_price + margin
-        
+
         return self.price_p_gallon
         
             

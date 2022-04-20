@@ -14,7 +14,7 @@ from flask_bcrypt import Bcrypt
 
 
 # Testing Pricing Module! Works!
-# price = price_module.Pricing_module().calcPrice('tx', 'yes', 1500)
+# price = price_module.Pricing_module().calcPrice('tx', 'no', 1500)
 # print(f'The price per gallon is ${price}!')
 # print(f'Total amount: 1500 * {price} = ${1500 * price:.2f}!')
 
@@ -51,11 +51,14 @@ def close_conn(e):
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    session['signed_in'] = False
+    # session['signed_in'] = False
     if request.method == "POST":
         if request.form.get('login') == 'Log in':
             username = request.form.get('username')
             password = request.form.get('password')
+
+            if username == "" or password == "":
+                return redirect(url_for("index"))
 
             command = f"SELECT password FROM customer\
                         WHERE username = '{username}';" # Fetching the password hash 
@@ -72,7 +75,8 @@ def index():
                 return redirect(url_for("index"))
             else:   # correct username and pwd
                 session['signed_in'] = True
-                # return redirect(url_for("client_profile_management"))
+                session['username'] = username
+
                 return redirect(url_for('logged_in'))
 
             # return render_template('index.html')
@@ -88,6 +92,18 @@ def index():
                 return redirect(url_for("index"))
 
             return redirect(url_for("client_profile_management"))
+
+        elif request.form.get('sign_out') == 'Sign Out':
+            # if not session['signed_in']:
+            output_msg = "You are not signed in!"
+            # if 'signed_in' in request.cookies:
+            #     print('hola')
+            if session['signed_in']:
+                output_msg = "Successfully signed out!"
+                session['signed_in'] = False
+            flash(output_msg, 'error')
+            return redirect(url_for("index"))
+                
 
     else: # method == GET
         return render_template('index.html')
@@ -162,11 +178,18 @@ def logged_in():
         elif request.form.get('fuel_quote_history') == 'Fuel Quote History':
             return redirect(url_for("fuel_quote_history"))
 
+        elif request.form.get('fuel_quote_form') == 'Fuel Quote Form':
+            return redirect(url_for("fuel_quote_form"))
+
     return render_template('logged_in.html')
 
 @app.route('/client_profile_management', methods=["POST", "GET"])
 def client_profile_management():
     if request.method == "POST":
+        if request.form.get('home') == 'Home':
+            return redirect(url_for("logged_in"))
+
+
         session['name'] = request.form['name']
         session['address1'] = request.form['address1']
         session['address2'] = request.form['address2']
@@ -218,32 +241,82 @@ def client_profile_management():
 @app.route('/fuel_quote_form', methods=["POST", "GET"])
 def fuel_quote_form():
     if request.method == "POST":
+        if request.form.get('home') == 'Home':
+            return redirect(url_for("logged_in"))
+
+
+        #TODO: FIX THIS
+        if request.form.get('submit') == 'Submit':
+            out_msg = 'Your quotation request has been submitted!'
+            return render_template('fuel_quote_form.html', out_msg=out_msg)
+
+   
+
         gallons_requested = request.form['gallons_requested']
         # delivery_address = request.form['delivery_address']
         delivery_date = request.form['delivery_date']
         # price_per_gallon = request.form['price_per_gallon']
-        total_amount = request.form['total_amount']
+        # total_amount = request.form['total_amount']
+
+        session['gallons_req'] = gallons_requested
+        session['deli_date'] = delivery_date
     
         # print(gallons_requested, delivery_address, delivery_date)
         # print(price_per_gallon, total_amount)
-        
-        #   TODO: remove price per gallon. Show after the user click submit
 
         # TODO: Update session_hist here by checking
-        price_p_gal = price_module.Pricing_module().calcPrice(session['state'],\
-                        session['hist'], gallons_requested)
-
-
-
-        message = 'Your quotation request has been submitted!'
-
-        return render_template('fuel_quote_form.html', message=message)
-
-    else:
-        command = f"SELECT address1, address2, city, state_,  zipcode \
-                   FROM user_details WHERE customerid = '{session['customer_id']}';"
+        # Check the table orders for the user id
+        # Get the userid from the username
+        command = f"SELECT customerid\
+                    FROM customer\
+                    WHERE username = '{session['username']}';"
+        
         db = get_db()
         cursor = db.cursor()
+
+        cursor.execute(command)
+        session['customer_id'] = cursor.fetchone()[0]
+
+        command = f"SELECT orderid\
+                     FROM orders\
+                     WHERE customerid = '{session['customer_id']}';" 
+        cursor.execute(command)
+        num_orders = len(cursor.fetchall())
+
+        if num_orders == 0:
+            session['hist'] = 'no'
+        else:
+            session['hist'] = 'yes'
+    
+        cursor.close()
+
+        price_p_gal = price_module.Pricing_module().calcPrice(session['state'],\
+                        session['hist'], gallons_requested)
+        total_price = price_p_gal * float(gallons_requested)
+
+        message = [f'Price per gallon = ${price_p_gal:.2f}', f'Total amount = ${total_price:.2f}']
+
+
+        if request.form.get('calculate') == 'Calculate':
+            return render_template('fuel_quote_form.html', message=message)
+        elif request.form.get('submit') == 'Submit':
+            print('hol')
+            out_msg = 'Your quotation request has been submitted!'
+            return render_template('fuel_quote_form.html', out_msg=out_msg)
+        
+    else:
+        command = f"SELECT customerid\
+                    FROM customer\
+                    WHERE username = '{session['username']}';"
+        
+        db = get_db()
+        cursor = db.cursor()
+
+        cursor.execute(command)
+        session['customer_id'] = cursor.fetchone()[0]
+
+        command = f"SELECT address1, address2, city, state_,  zipcode \
+                   FROM user_details WHERE customerid = '{session['customer_id']}';"
 
         cursor.execute(command)
         table_data = cursor.fetchone()
@@ -264,8 +337,11 @@ def fuel_quote_form():
 
 
 
-@app.route('/fuel_quote_history')
+@app.route('/fuel_quote_history', methods=["POST", "GET"])
 def fuel_quote_history():
+    if request.form.get('home') == 'Home':
+            return redirect(url_for("logged_in"))
+
     return render_template('fuel_quote_history.html')
 
 # wsgi_app = app.wsgi_app

@@ -37,25 +37,46 @@
                 <input type="date" name="delivery_date" placeholder="01/01/2000" required>
                 <br><br>
 
-                <label for="price_per_gallon">Price/Gallon: </label>
+                <!-- <label for="price_per_gallon">Price/Gallon: </label>
                 <input type="number" name="price_per_gallon" value="0.00" readonly>
                 <br><br>
 
                 <label for="total_amount">Total Amount: </label>
-                <input type="number" name="total_amount" value="0.00" readonly>
-                <br><br>
+                <input type="number" name="total_amount" value="" readonly>     
+                <br><br> -->
 
                 <div class="fuel_quote_form_button">
-                    <button type="submit" name="login" value="Submit">Submit!</button> 
+                    <button type="submit" name="calculate" value="Calculate">Calculate!</button>
                 </div>
 
             </form>
 
+            <form action="#" method="POST">
+                <div class="fuel_quote_form_button">
+                    <!-- <button type="submit" name="submit" value="Submit">Submit!</button> -->
+                    <button type="submit" name="home" value="Home">Home!</button>
+                </div>
+            </form>
+            
             <div class="output_msg">
                 {% if message %}
-                    <p>{{ message }}</p>
+                    {% for m in message %}
+                        <p>{{ m }}</p>
+                    {% endfor %}
                 {% endif %}
             </div>
+
+            <div class="output_msg">
+                {% if out_msg %}
+                    <p>{{ out_msg }}</p>
+                {% endif %}
+            </div>
+
+            <form action="#" method="POST">
+                <div class="fuel_quote_form_button">
+                    <button type="submit" name="submit" value="Submit">Submit!</button>
+                </div>
+            </form>
         </div>
     </body>
 </html>
