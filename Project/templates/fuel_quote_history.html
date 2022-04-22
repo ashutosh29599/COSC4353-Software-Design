@@ -19,29 +19,32 @@
 
 
         <div class="quote_hist">
+            <div class="fuel_quote_form_title">
+                Quotation History
+            </div>
+            <br>
+
             <table>
-                <tr>
+                <tr class="table_header">
                     <th>Delivery Date </th>
                     <th>Gallons Requested</th>
+                    <th>Delivery Address</th>
                     <th>Price/Gallon</th>
                     <th>Total Amount</th>
                 </tr>
 
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                {% for item in data %}
+                    <tr>
+                        <td>{{ item[0] }}</td>
+                        <td>{{ item[1] }}</td>
+                        <td>{{ item[2] }}</td>
+                        <td>{{ item[3] }}</td>
+                        <td>{{ item[4] }}</td>
+                    </tr>
+                {% endfor %}
+                
             </table>
-            <form action="" method="POST">
+            <form action="" method="POST" class="fuel_quote_hist_button">
                 <button type="submit" name="home" value="Home">Home</button>
             </form>
         </div>

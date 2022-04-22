@@ -246,14 +246,15 @@ border: 1px solid #555;
 
 .quote_hist {
     border-radius: 5px;
-    background-color: rgba(71, 71, 71, 0.637);
-    float: right;
-    margin: 25px 4px;
-    right: 140px;
+    background-color: rgba(71, 71, 71, 0.925);
+
+    display: inline-block; 
+    margin: auto;
+    right: 270px;
     top: 200px;
     padding: 20px;
     position: relative;
-    width: 400px;
+    width: 1000px;
 }
 
 
@@ -268,6 +269,26 @@ border: 1px solid #555;
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
+}
+
+
+.fuel_quote_hist_button {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.fuel_quote_hist_button button {
+    border-radius: 4px;
+    margin: 8px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.table_header {
+    font-size: large;
+    color: white;
 }
   
 
@@ -295,6 +316,12 @@ border: 1px solid #555;
     margin: 8px auto;
     padding: 10px;
     text-align: center;
+}
+
+.welcome_username {
+    color: rgb(217, 255, 0);
+    text-align: center;
+    font-size: 24px;
 }
 
 

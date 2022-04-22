@@ -21,10 +21,34 @@
         
 
         <div class="logged_in_form">
-            <!-- <div class="login_form_title">
-                Log in!
-            </div> -->
-            <!-- <br><br> -->
+            <div class="login_form_title">
+                Home
+            </div> 
+            <div class="welcome_username">
+                {% if uname %}
+                        <p>Welcome {{ uname }}!</p>
+                    {% endif %}
+            </div> 
+            
+             <!-- <br><br>
+            <div class="flash_msg">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% for category, output_msg in messages %}
+                    <div class="alert {{category}}"> <p>{{ output_msg }}</p> </div>
+                    {% endfor %}
+                {% endwith %}
+            </div>  -->
+
+
+            <form method="POST" action="">
+                <div class="logged_in_btn">
+                    <button type="submit" name="manage_profile" value="Manage Profile">Manage Profile</button>
+                    <button type="submit" name="fuel_quote_history" value="Fuel Quote History">Fuel Quote History</button>
+                    <button type="submit" name="fuel_quote_form" value="Fuel Quote Form">Fuel Quote Form</button>
+                    <button type="submit" name="sign_out" value="Sign Out">Sign Out</button>
+                </div>
+            </form>
+
             <div class="flash_msg">
                 {% with messages = get_flashed_messages(with_categories=true) %}
                     {% for category, output_msg in messages %}
@@ -32,16 +56,6 @@
                     {% endfor %}
                 {% endwith %}
             </div>
-
-
-            <form method="POST" action="">
-                <div class="logged_in_btn">
-                    <button type="submit" name="manage_profile" value="Manage Profile">Manage Profile</button>
-                    <!-- <button type="submit" name="fuel_quote_form" value="Fuel Quote Form">Fuel Quote Form</button> -->
-                    <button type="submit" name="fuel_quote_history" value="Fuel Quote History">Fuel Quote History</button>
-                    <button type="submit" name="fuel_quote_form" value="Fuel Quote Form">Fuel Quote Form</button>
-                </div>
-            </form>
 
         </div>
     </body>

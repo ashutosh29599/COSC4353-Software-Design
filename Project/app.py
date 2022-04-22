@@ -1,4 +1,5 @@
 from collections import UserDict
+# from crypt import methods
 from threading import get_ident
 from flask import Flask, render_template, request, url_for, g, session, redirect, flash
 import price_module
@@ -68,7 +69,10 @@ def index():
             cursor.execute(command)
             table_data = cursor.fetchone()  # table_data[0] is the pwd hash
             cursor.close()
-        
+
+            if table_data == None:
+                return redirect(url_for('index'))
+
             if not bcrypt.check_password_hash(table_data[0], password): # incorrect username or pwd
                 output_msg = "Incorrect username or password. Please try again!"
                 flash(output_msg, 'error')
@@ -110,7 +114,6 @@ def index():
 
 @app.route('/signup', methods=["POST", "GET"])
 def signup():
-        
     if request.method == "POST":
         if request.form.get('register') == 'Register':
             session['username'] = request.form.get('username')
@@ -146,6 +149,8 @@ def signup():
                     to complete your profile info before you can request a quote."
             flash(output_msg, 'success')
 
+            session['signed_in'] = True
+
             return render_template('signup.html')
 
         elif request.form.get('back') == 'Back':
@@ -162,11 +167,11 @@ def signup():
     return render_template('signup.html')
 
 
-@app.route('/logged_in', methods=["POST", "GET"])
+@app.route('/home', methods=["POST", "GET"])
 def logged_in():
-    output_msg = "You've successfully logged in! You will now need to \
-                complete your profile if you haven't done so before you can request a quote!"
-    flash(output_msg, 'error')
+    # output_msg = "You've successfully logged in! You will now need to \
+    #             complete your profile if you haven't done so before you can request a quote!"
+    # flash(output_msg, 'error')
 
     if request.method == "POST":
         if request.form.get('manage_profile') == 'Manage Profile':
@@ -179,9 +184,34 @@ def logged_in():
             return redirect(url_for("fuel_quote_history"))
 
         elif request.form.get('fuel_quote_form') == 'Fuel Quote Form':
+            # Check if the user has updated the address in the db
+            db = get_db()
+            cursor = db.cursor()
+            command = f"SELECT address1, address2, city, state_,  zipcode \
+                   FROM user_details WHERE customerid = '{session['customer_id']}';"
+
+            cursor.execute(command)
+            table_data = cursor.fetchone()
+            cursor.close()
+
+            if table_data == None: # No address in db
+                output_msg = "Please update your address in your account."
+                flash(output_msg, 'error')
+                return redirect(url_for('logged_in'))
+
             return redirect(url_for("fuel_quote_form"))
 
-    return render_template('logged_in.html')
+        elif request.form.get('sign_out') == 'Sign Out':
+            session['signed_in'] = False
+            session['username'] = ''
+            session['password'] = ''
+            
+            return redirect(url_for('index'))
+
+    if session['username'] == '':
+        return render_template('logged_in.html')
+
+    return render_template('logged_in.html', uname=session['username'])
 
 @app.route('/client_profile_management', methods=["POST", "GET"])
 def client_profile_management():
@@ -214,22 +244,53 @@ def client_profile_management():
                                     name=session['name'], address1=session['address1'],\
                                     address2=session['address2'], city=session['city'], zipcode=session['zipcode'])
 
-
-        # Send the data to the db
-        session['user_id'] = genID(16)
-        command = "INSERT INTO user_details VALUES "\
-                    f"('{session['user_id']}', '{session['customer_id']}',\
-                        '{session['name']}', '{session['address1']}', '{session['address2']}',\
-                        '{session['city']}', '{session['state']}', '{session['zipcode']}')"
+        # Check if the username exists -- i.e. check if the user is updating his address
         db = get_db()
         cursor = db.cursor()
+        command = f"SELECT customerid\
+                    FROM customer\
+                    WHERE username = '{session['username']}';"
+        
+        cursor.execute(command)
+        data = cursor.fetchone() # user customerid
+
+        if len(data) != 0: # user already exists
+            command = f"SELECT COUNT(*) FROM user_details\
+                        WHERE customerid = '{data[0]}';"
+            cursor.execute(command)
+            num = cursor.fetchall()[0][0]
+            print(num)
+
+            if num == 0: # No previous address
+                session['user_id'] = genID(16)
+                command = "INSERT INTO user_details VALUES "\
+                            f"('{session['user_id']}', '{session['customer_id']}',\
+                                '{session['name']}', '{session['address1']}', '{session['address2']}',\
+                                '{session['city']}', '{session['state']}', '{session['zipcode']}')"
+                output_msg = 'Your profile has been saved!'
+            
+            else:
+                command = f"UPDATE user_details SET\
+                            cust_name = '{session['name']}', address1 = '{session['address1']}', address2 = '{session['address2']}',\
+                            city = '{session['city']}', state_ = '{session['state']}', zipcode = '{session['zipcode']}'\
+                            WHERE customerid = '{data[0]}';"
+                output_msg = 'Your profile have been updated!'
+            print(command)
+
+        # else:    # setting up profile for the first time
+        #     # Send the data to the db
+        #     session['user_id'] = genID(16)
+        #     command = "INSERT INTO user_details VALUES "\
+        #                 f"('{session['user_id']}', '{session['customer_id']}',\
+        #                     '{session['name']}', '{session['address1']}', '{session['address2']}',\
+        #                     '{session['city']}', '{session['state']}', '{session['zipcode']}')"
+        #     output_msg = 'Your profile has been saved!'
+
 
         cursor.execute(command)
-
         db.commit()
         cursor.close()
     
-        output_msg = 'Your profile has been saved!'
 
         return render_template('client_profile_mgmt.html', output_msg=output_msg)
 
@@ -244,27 +305,13 @@ def fuel_quote_form():
         if request.form.get('home') == 'Home':
             return redirect(url_for("logged_in"))
 
-
-        #TODO: FIX THIS
-        if request.form.get('submit') == 'Submit':
-            out_msg = 'Your quotation request has been submitted!'
-            return render_template('fuel_quote_form.html', out_msg=out_msg)
-
    
-
         gallons_requested = request.form['gallons_requested']
-        # delivery_address = request.form['delivery_address']
         delivery_date = request.form['delivery_date']
-        # price_per_gallon = request.form['price_per_gallon']
-        # total_amount = request.form['total_amount']
 
         session['gallons_req'] = gallons_requested
         session['deli_date'] = delivery_date
     
-        # print(gallons_requested, delivery_address, delivery_date)
-        # print(price_per_gallon, total_amount)
-
-        # TODO: Update session_hist here by checking
         # Check the table orders for the user id
         # Get the userid from the username
         command = f"SELECT customerid\
@@ -294,15 +341,13 @@ def fuel_quote_form():
                         session['hist'], gallons_requested)
         total_price = price_p_gal * float(gallons_requested)
 
-        message = [f'Price per gallon = ${price_p_gal:.2f}', f'Total amount = ${total_price:.2f}']
+        session['price_p_gallon'] = price_p_gal
+        session['total_price'] = total_price
 
-
+        
         if request.form.get('calculate') == 'Calculate':
-            return render_template('fuel_quote_form.html', message=message)
-        elif request.form.get('submit') == 'Submit':
-            print('hol')
-            out_msg = 'Your quotation request has been submitted!'
-            return render_template('fuel_quote_form.html', out_msg=out_msg)
+            return redirect('fuel_quote_confirm')
+            # return render_template('fuel_quote_confirm.html', message=message)
         
     else:
         command = f"SELECT customerid\
@@ -320,7 +365,9 @@ def fuel_quote_form():
 
         cursor.execute(command)
         table_data = cursor.fetchone()
-        # print(table_data)
+        # if len(table_data) == 0: # No address in db
+
+
 
         deli_address = ''
         for elem in table_data:
@@ -329,6 +376,7 @@ def fuel_quote_form():
                     deli_address += elem + ', '
                 else:
                     deli_address += elem
+        session['deli_addess'] = deli_address
 
         db.commit()
         cursor.close()
@@ -337,12 +385,91 @@ def fuel_quote_form():
 
 
 
+@app.route('/fuel_quote_confirm', methods=["POST", "GET"])
+def fuel_quote_confirm():
+    if request.method == "POST":
+        if request.form.get('home') == 'Home':
+            return redirect(url_for("logged_in"))
+        
+        elif request.form.get('submit') == 'Submit': # store the order in the db
+            # create a unique order id
+            session['order_id'] = genID(16)
+            # print(f"date = {session['deli_date']}")
+
+            # Getting Delivery address from the db
+            db = get_db()
+            cursor = db.cursor()
+            command = f"SELECT address1, address2, city, state_,  zipcode \
+                   FROM user_details WHERE customerid = '{session['customer_id']}';"
+
+            cursor.execute(command)
+            table_data = cursor.fetchone()
+            # print(table_data)
+            # print(table_data)
+
+            deli_address = ''
+            for elem in table_data:
+                if elem != '':
+                    if elem != table_data[-1]:
+                        deli_address += elem + ', '
+                    else:
+                        deli_address += elem
+            session['deli_address'] = deli_address
+            # print(session['deli_address'])
+
+            try:
+                command = f"INSERT INTO orders\
+                        (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price)\
+                        VALUES ('{session['order_id']}', '{session['customer_id']}',\
+                            '{session['deli_address']}', {session['gallons_req']}, NOW(),\
+                            '{session['deli_date']}', {session['price_p_gallon']}, {session['total_price']});"
+                
+                db = get_db()
+                cursor = db.cursor()
+
+                cursor.execute(command)
+                db.commit()
+
+                out_msg = 'Order successfully submitted!'
+            except:
+                out_msg = 'Unexpected error!'
+
+            return render_template('fuel_quote_confirm.html', out_msg=out_msg)
+
+    price_p_gal = session['price_p_gallon']
+    total_price = session['total_price']
+    
+    message = [f'Price per gallon = ${price_p_gal:.2f}', f'Total amount = ${total_price:.2f}']
+    return render_template('fuel_quote_confirm.html', message=message)
+
+
+
 @app.route('/fuel_quote_history', methods=["POST", "GET"])
 def fuel_quote_history():
-    if request.form.get('home') == 'Home':
+    if request.method == "POST":
+        if request.form.get('home') == 'Home':
             return redirect(url_for("logged_in"))
 
-    return render_template('fuel_quote_history.html')
+    # Get the history from the db
+    command = f"SELECT\
+                deliverydate, gallonsrequested, custlocation, price_p_gal, price\
+                FROM orders\
+                WHERE customerid = '{session['customer_id']}';"
+    
+    db = get_db()
+    cursor = db.cursor()
+
+    cursor.execute(command)
+    data = cursor.fetchall()
+    # print(data)    
+
+    for stuff in data:
+        print(stuff)
+
+    cursor.close()
+    
+
+    return render_template('fuel_quote_history.html', data=data)
 
 # wsgi_app = app.wsgi_app
 if __name__ == "__main__":
