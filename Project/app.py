@@ -77,9 +77,21 @@ def index():
                 output_msg = "Incorrect username or password. Please try again!"
                 flash(output_msg, 'error')
                 return redirect(url_for("index"))
+
             else:   # correct username and pwd
                 session['signed_in'] = True
                 session['username'] = username
+
+                # Set customer_id in the cookie
+                command = f"SELECT customerid\
+                            FROM customer\
+                            WHERE username = '{session['username']}';"
+                db = get_db()
+                cursor = db.cursor()
+
+                cursor.execute(command)
+                session['customer_id'] = cursor.fetchone()[0]
+                print(session['customer_id'])
 
                 return redirect(url_for('logged_in'))
 
@@ -145,13 +157,14 @@ def signup():
             db.commit()
             cursor.close()
 
-            output_msg = "You've successfully signed up! You now need to login\
-                    to complete your profile info before you can request a quote."
-            flash(output_msg, 'success')
+            # output_msg = "You've successfully signed up! You now need to login\
+            #         to complete your profile info before you can request a quote."
+            # flash(output_msg, 'success')
 
             session['signed_in'] = True
 
-            return render_template('signup.html')
+            # return render_template('signup.html')
+            return redirect(url_for('logged_in'))
 
         elif request.form.get('back') == 'Back':
             return redirect(url_for('index'))
@@ -192,6 +205,7 @@ def logged_in():
 
             cursor.execute(command)
             table_data = cursor.fetchone()
+            print(table_data)
             cursor.close()
 
             if table_data == None: # No address in db
@@ -434,12 +448,13 @@ def fuel_quote_confirm():
             except:
                 out_msg = 'Unexpected error!'
 
-            return render_template('fuel_quote_confirm.html', out_msg=out_msg)
+            # return render_template('fuel_quote_confirm.html', out_msg=out_msg)
+            return render_template('fuel_quote_success.html', out_msg=out_msg)
 
     price_p_gal = session['price_p_gallon']
     total_price = session['total_price']
     
-    message = [f'Price per gallon = ${price_p_gal:.2f}', f'Total amount = ${total_price:.2f}']
+    message = [f'Price per gallon = ${price_p_gal:,.2f}', f'Total amount = ${total_price:,.2f}']
     return render_template('fuel_quote_confirm.html', message=message)
 
 
