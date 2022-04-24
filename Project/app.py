@@ -50,9 +50,14 @@ def log(user, text):
     if user == "":
         return
     
+    curr_timestamp = str(datetime.now())
+    curr_timestamp += ':'
+    
+
     filename = 'SQL Log/' + user + '.txt'
 
     with open(filename, 'a') as file:
+        print(curr_timestamp, file=file)
         print(text, file=file)
 
 
@@ -112,7 +117,7 @@ def index():
                 session['customer_id'] = cursor.fetchone()[0]
                 cursor.close()
 
-                log_txt += '\n'
+                # # log_txt += '\n'
                 log(session['customer_id'], log_txt)
 
                 return redirect(url_for('logged_in'))
@@ -189,7 +194,7 @@ def signup():
 
             session['signed_in'] = True
 
-            log_txt += '\n'
+            # log_txt += '\n'
             log(session['customer_id'], log_txt)
 
             return redirect(url_for('logged_in'))
@@ -247,7 +252,7 @@ def logged_in():
             session['customer_id'] = cursor.fetchone()[0]
             cursor.close()
 
-            log_txt += '\n'
+            # log_txt += '\n'
             log(session['customer_id'], log_txt)
 
             if table_data == None: # No address in db
@@ -357,7 +362,7 @@ def client_profile_management():
         session['customer_id'] = cursor.fetchone()[0]
         cursor.close()
 
-        log_txt += '\n'
+        # log_txt += '\n'
         log(session['customer_id'], log_txt)
         
         return render_template('client_profile_mgmt.html', output_msg=output_msg)
@@ -431,7 +436,7 @@ def fuel_quote_form():
         session['price_p_gallon'] = price_p_gal
         session['total_price'] = total_price
 
-        log_txt += '\n'
+        # log_txt += '\n'
         log(session['customer_id'], log_txt)
 
         if request.form.get('calculate') == 'Calculate':
@@ -471,7 +476,7 @@ def fuel_quote_form():
         db.commit()
         cursor.close()
 
-        log_txt += '\n'
+        # log_txt += '\n'
         log(session['customer_id'], log_txt)
 
         return render_template('fuel_quote_form.html', deli_address=deli_address)
@@ -529,7 +534,7 @@ def fuel_quote_confirm():
 
                 out_msg = 'Order successfully submitted!'
 
-                log_txt += '\n'
+                # log_txt += '\n'
                 log(session['customer_id'], log_txt)
 
             except:
@@ -580,7 +585,7 @@ def fuel_quote_history():
 
     cursor.close()
 
-    log_txt += '\n'
+    # log_txt += '\n'
     log(session['customer_id'], log_txt)
     
 
