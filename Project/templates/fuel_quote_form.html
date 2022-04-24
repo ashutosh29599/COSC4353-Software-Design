@@ -77,6 +77,14 @@
                     <p>{{ out_msg }}</p>
                 {% endif %}
             </div> -->
+
+            <div class="flash_msg">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% for category, output_msg in messages %}
+                    <div class="alert {{category}}"> <p>{{ output_msg }}</p> </div>
+                    {% endfor %}
+                {% endwith %}
+            </div>
         </div>
     </body>
 </html>

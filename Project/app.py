@@ -2,7 +2,9 @@ from collections import UserDict
 # from crypt import methods
 from threading import get_ident
 from flask import Flask, render_template, request, url_for, g, session, redirect, flash
+from sqlalchemy import outerjoin
 import price_module
+from datetime import datetime
 
 import psycopg2
 from psycopg2.extras import RealDictCursor
@@ -323,6 +325,12 @@ def fuel_quote_form():
         gallons_requested = request.form['gallons_requested']
         delivery_date = request.form['delivery_date']
 
+        today = datetime.today().strftime('%Y-%m-%d')
+        if today > delivery_date:   # the date is in the past
+            out_msg = 'The delivery date cannot be in the past!'
+            flash(out_msg, 'error')
+            return redirect(url_for('fuel_quote_form'))
+
         session['gallons_req'] = gallons_requested
         session['deli_date'] = delivery_date
     
@@ -348,8 +356,15 @@ def fuel_quote_form():
             session['hist'] = 'no'
         else:
             session['hist'] = 'yes'
-    
+
+        # Get the state in the cookies
+        command = f"SELECT state_\
+                    FROM user_details\
+                    WHERE customerid = '{session['customer_id']}';"
+        cursor.execute(command)
+        session['state'] = cursor.fetchone()[0]
         cursor.close()
+
 
         price_p_gal = price_module.Pricing_module().calcPrice(session['state'],\
                         session['hist'], gallons_requested)
