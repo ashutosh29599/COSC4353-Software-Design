@@ -1,0 +1,107 @@
+SELECT * FROM customer WHERE username = 'test';
+INSERT INTO customer VALUES ('n4l9pZEnMbkA8hM9', '' , 'test', '$2b$12$FyxLiH2b0V8BYt.HlBbLSeVyltfg3M4CJa3Ke3h0Z.k36wJNcrYrO')
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+INSERT INTO user_details VALUES ('trg6VvcwRkoGUCFd', 'n4l9pZEnMbkA8hM9', 'Testing Testingson', '234 Nothing St', '', 'Houston', 'TX', '77001')
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT orderid FROM orders WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT state_ FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('UmRHO8Bzho1iIj8J', 'n4l9pZEnMbkA8hM9', '234 Nothing St, Houston, TX, 77001', 1500, NOW(), '2022-04-26', 1.71, 2565.0);
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT orderid FROM orders WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT state_ FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('lHgvhEI5jvN3FptO', 'n4l9pZEnMbkA8hM9', '234 Nothing St, Houston, TX, 77001', 1500, NOW(), '2022-04-28', 1.695, 2542.5);
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+UPDATE user_details SET cust_name = 'Testing Test', address1 = '789 Something St', address2 = 'Apt 4545', city = 'LV', state_ = 'NV', zipcode = '88001' WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT customerid FROM customer WHERE username = 'test';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT orderid FROM orders WHERE customerid = 'n4l9pZEnMbkA8hM9';
+SELECT state_ FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'n4l9pZEnMbkA8hM9';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('Itvzwb9o1jKcEto0', 'n4l9pZEnMbkA8hM9', '789 Something St, Apt 4545, LV, NV, 88001', 500, NOW(), '2022-04-27', 1.74, 870.0);
+
+
+SELECT customerid FROM customer WHERE username = 'test';
+SELECT deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'n4l9pZEnMbkA8hM9';
+
+
