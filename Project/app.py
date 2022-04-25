@@ -92,6 +92,8 @@ def index():
             cursor.close()
 
             if table_data == None:
+                output_msg = "This username doesn't exist!"
+                flash(output_msg, 'error')
                 return redirect(url_for('index'))
 
             if not bcrypt.check_password_hash(table_data[0], password): # incorrect username or pwd
@@ -128,24 +130,24 @@ def index():
         elif request.form.get('signup') == 'Sign up':
             return redirect(url_for("signup"))
 
-        elif request.form.get('manage_profile') == 'Manage Profile':
-            if not session['signed_in']:
-                output_msg = "You must sign in or sign up before you can manage your profile."
-                flash(output_msg, 'error')
-                return redirect(url_for("index"))
+        # elif request.form.get('manage_profile') == 'Manage Profile':
+        #     if not session['signed_in']:
+        #         output_msg = "You must sign in or sign up before you can manage your profile."
+        #         flash(output_msg, 'error')
+        #         return redirect(url_for("index"))
 
-            return redirect(url_for("client_profile_management"))
+        #     return redirect(url_for("client_profile_management"))
 
-        elif request.form.get('sign_out') == 'Sign Out':
-            # if not session['signed_in']:
-            output_msg = "You are not signed in!"
-            # if 'signed_in' in request.cookies:
-            #     print('hola')
-            if session['signed_in']:
-                output_msg = "Successfully signed out!"
-                session['signed_in'] = False
-            flash(output_msg, 'error')
-            return redirect(url_for("index"))
+        # elif request.form.get('sign_out') == 'Sign Out':
+        #     # if not session['signed_in']:
+        #     output_msg = "You are not signed in!"
+        #     # if 'signed_in' in request.cookies:
+        #     #     print('hola')
+        #     if session['signed_in']:
+        #         output_msg = "Successfully signed out!"
+        #         session['signed_in'] = False
+        #     flash(output_msg, 'error')
+        #     return redirect(url_for("index"))
                 
 
     else: # method == GET
@@ -158,6 +160,9 @@ def signup():
             session['username'] = request.form.get('username')
             encrypted_pwd = bcrypt.generate_password_hash(request.form.get('password')).decode('utf-8')
             session['password'] = encrypted_pwd
+
+            # session['username'] = username
+            # session['password']
             
             db = get_db()
             cursor = db.cursor()
@@ -240,16 +245,16 @@ def logged_in():
 
             cursor.execute(command)
             table_data = cursor.fetchone()
-            print(table_data)
+            # print(table_data)
             
-            command = f"SELECT customerid\
-                            FROM customer\
-                            WHERE username = '{session['username']}';"
-            temp = " ".join(command.split()) + '\n'
-            log_txt += temp
+            # command = f"SELECT customerid\
+            #                 FROM customer\
+            #                 WHERE username = '{session['username']}';"
+            # temp = " ".join(command.split()) + '\n'
+            # log_txt += temp
 
-            cursor.execute(command)
-            session['customer_id'] = cursor.fetchone()[0]
+            # cursor.execute(command)
+            # session['customer_id'] = cursor.fetchone()[0]
             cursor.close()
 
             # log_txt += '\n'
@@ -380,6 +385,8 @@ def fuel_quote_form():
 
         gallons_requested = request.form['gallons_requested']
         delivery_date = request.form['delivery_date']
+        # print(type(delivery_date))
+        # print(delivery_date)
 
         today = datetime.today().strftime('%Y-%m-%d')
         if today > delivery_date:   # the date is in the past
@@ -492,7 +499,6 @@ def fuel_quote_confirm():
         elif request.form.get('submit') == 'Submit': # store the order in the db
             # create a unique order id
             session['order_id'] = genID(16)
-            # print(f"date = {session['deli_date']}")
 
             # Getting Delivery address from the db
             db = get_db()

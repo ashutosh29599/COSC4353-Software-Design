@@ -1,0 +1,4 @@
+2022-04-24 20:22:56.168190:
+SELECT * FROM customer WHERE username = 'somethingrandom12345';
+INSERT INTO customer VALUES ('5Dx8vrBrfFtDX2rV', '' , 'somethingrandom12345', '$2b$12$5.HELMKRjKDXv07.THB3zecHJV4lAsk.7PW7080Bbbq5RmSsaorGu')
+

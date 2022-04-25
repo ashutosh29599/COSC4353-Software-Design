@@ -1,0 +1,91 @@
+2022-04-24 21:04:56.855435:
+SELECT * FROM customer WHERE username = 'testuser2';
+INSERT INTO customer VALUES ('k1JdZADxedIuFdmD', '' , 'testuser2', '$2b$12$O1fW17C8i3j1ffk1wMND/eOjlu6ebktCQui3cbaXdQxEX/Qy2riy.')
+
+2022-04-24 21:04:58.546517:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:05:03.499684:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:05:05.143950:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:05:19.436317:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+INSERT INTO user_details VALUES ('01CDKBU2XjRKPhTQ', 'k1JdZADxedIuFdmD', 'Ashutosh Kumar', '1234 Something ST', '', 'Houston', 'TX', '77001')
+SELECT customerid FROM customer WHERE username = 'testuser2';
+
+2022-04-24 21:05:22.196830:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:05:22.206828:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:05:34.921511:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:05:42.239385:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT orderid FROM orders WHERE customerid = 'k1JdZADxedIuFdmD';
+SELECT state_ FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:05:48.315807:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('syHWBoEWLy92bQvC', 'k1JdZADxedIuFdmD', '1234 Something ST, Houston, TX, 77001', 4000, NOW(), '2022-04-28', 1.71, 6840.0);
+
+2022-04-24 21:05:54.126405:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:06:05.139883:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:06:05.149884:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:06:12.728611:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT orderid FROM orders WHERE customerid = 'k1JdZADxedIuFdmD';
+SELECT state_ FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:06:19.827683:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('0Ox8XWxsYnciaryo', 'k1JdZADxedIuFdmD', '1234 Something ST, Houston, TX, 77001', 1500, NOW(), '2022-04-28', 1.695, 2542.5);
+
+2022-04-24 21:06:48.562606:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '789 Another Address St', address2 = 'Apt 453', city = 'LA', state_ = 'CA', zipcode = '44455' WHERE customerid = 'k1JdZADxedIuFdmD';
+SELECT customerid FROM customer WHERE username = 'testuser2';
+
+2022-04-24 21:06:51.754339:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:06:51.764339:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:06:58.804981:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT orderid FROM orders WHERE customerid = 'k1JdZADxedIuFdmD';
+SELECT state_ FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:07:19.951619:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'k1JdZADxedIuFdmD';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('VPVWmYbGruHdHgHk', 'k1JdZADxedIuFdmD', '789 Another Address St, Apt 453, LA, CA, 44455', 500, NOW(), '2022-09-15', 1.74, 870.0);
+
+2022-04-24 21:07:21.893368:
+SELECT customerid FROM customer WHERE username = 'testuser2';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'k1JdZADxedIuFdmD';
+
+2022-04-24 21:07:35.422833:
+SELECT password FROM customer WHERE username = 'testuser2';
+SELECT customerid FROM customer WHERE username = 'testuser2';
+

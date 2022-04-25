@@ -1,0 +1,69 @@
+2022-04-24 20:25:13.304086:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:26:43.669278:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:27:09.183889:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:27:38.610960:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:28:25.603706:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:32:13.143401:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:33:38.737588:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:36:51.445761:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:37:04.920492:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:37:42.191361:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:37:57.948057:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:38:26.910935:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:39:16.532034:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:39:27.028864:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:40:08.476774:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:41:03.256454:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:41:47.247667:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:42:27.527414:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:43:02.739135:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:45:10.318972:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:49:26.066228:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:50:51.197089:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-24 20:59:32.850714:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
