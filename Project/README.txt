@@ -4,3 +4,8 @@ For more info: https://stackoverflow.com/questions/65558323/transferring-a-pytho
 More Info: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 There is a file called 'script.sql' in this directory which can be used to recreate the database in postgresql.
+
+
+TO RUN:
+1) First enter the virtual env: ./env/Scripts/activate (for Windows)
+2) python app.py

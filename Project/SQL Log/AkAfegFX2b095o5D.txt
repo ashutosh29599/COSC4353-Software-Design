@@ -2841,3 +2841,146 @@ SELECT address1, address2, city, state_, zipcode FROM user_details WHERE custome
 SELECT password FROM customer WHERE username = 'ashutosh';
 SELECT customerid FROM customer WHERE username = 'ashutosh';
 
+2022-04-25 07:49:47.827343:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-25 07:49:49.106909:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:49:57.710088:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:49:57.715017:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:03.006898:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:03.905496:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('NA8JsbNuoX5dWFle', 'AkAfegFX2b095o5D', '555 Side St, Houston, TX, 77007', 7845, NOW(), '2022-04-29', 1.695, 13297.275);
+
+2022-04-25 07:50:05.742953:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:05.752949:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:11.303298:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:11.997231:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('1efsQ97vD5B8rss4', 'AkAfegFX2b095o5D', '555 Side St, Houston, TX, 77007', 78912, NOW(), '2022-07-13', 1.695, 133755.84);
+
+2022-04-25 07:50:13.691200:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:21.286847:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:21.295175:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:29.154831:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:50:31.413677:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('hL1S8vZWEqN85dXS', 'AkAfegFX2b095o5D', '555 Side St, Houston, TX, 77007', 7456, NOW(), '2022-04-27', 1.695, 12637.92);
+
+2022-04-25 07:50:32.972282:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:04.209359:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:04.217358:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:08.199039:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:09.231621:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('esXswfk3tJmdEUga', 'AkAfegFX2b095o5D', '555 Side St, Houston, TX, 77007', 1500, NOW(), '2022-04-26', 1.695, 2542.5);
+
+2022-04-25 07:51:11.553405:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:17.551850:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:17.561851:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:22.378755:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:22.978868:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('XsHXYpkvtNXdhkF1', 'AkAfegFX2b095o5D', '555 Side St, Houston, TX, 77007', 7800, NOW(), '2022-06-30', 1.695, 13221.0);
+
+2022-04-25 07:51:24.357837:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:24.367838:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:29.856835:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:30.536833:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('miIGL6DzhPI0lF2T', 'AkAfegFX2b095o5D', '555 Side St, Houston, TX, 77007', 655, NOW(), '2022-07-20', 1.71, 1120.05);
+
+2022-04-25 07:51:33.322639:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:51:49.812074:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:52:48.283366:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:55:38.382708:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-25 07:55:42.472722:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:55:42.482721:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 07:55:44.451960:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
