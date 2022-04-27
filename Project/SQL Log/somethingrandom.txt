@@ -67,3 +67,9 @@ SELECT address1, address2, city, state_, zipcode FROM user_details WHERE custome
 2022-04-24 20:59:32.850714:
 SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
 
+2022-04-25 12:35:07.485151:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+
+2022-04-25 12:52:08.894492:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'somethingrandom';
+

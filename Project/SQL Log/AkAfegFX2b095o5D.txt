@@ -2984,3 +2984,83 @@ SELECT address1, address2, city, state_, zipcode FROM user_details WHERE custome
 SELECT customerid FROM customer WHERE username = 'ashutosh';
 SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
 
+2022-04-25 12:25:21.864095:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-25 12:25:23.680823:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:35:07.358157:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-25 12:35:07.420150:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:35:07.436151:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:35:07.448156:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:35:07.481153:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:35:07.704196:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-25 12:44:54.381609:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-25 12:44:56.393609:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:52:08.774494:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-25 12:52:08.834495:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:52:08.851496:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:52:08.861495:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:52:08.890492:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-25 12:52:09.115493:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-26 18:40:42.249962:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-26 18:41:35.400799:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-26 19:20:03.123896:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+

@@ -5,6 +5,7 @@ from flask import Flask, render_template, request, url_for, g, session, redirect
 from sqlalchemy import outerjoin
 import price_module
 from datetime import datetime
+import re
 
 import psycopg2
 from psycopg2.extras import RealDictCursor
@@ -158,7 +159,27 @@ def signup():
     if request.method == "POST":
         if request.form.get('register') == 'Register':
             session['username'] = request.form.get('username')
-            encrypted_pwd = bcrypt.generate_password_hash(request.form.get('password')).decode('utf-8')
+            password = request.form.get('password')
+            
+            # Password Validation
+            reg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{8,20}$"
+            reg = re.compile(reg)
+
+            if not re.match(reg, password):
+                output_msg = ["\u2022 The password needs to be 8-20 characters long.",
+                            "\u2022 The password needs to have a lowercase letter",
+                            "\u2022 The password needs to have an uppercase letter",
+                            "\u2022 The password needs to have a number",
+                            "\u2022 The password needs to have a special character (!@#$%&*?)"]
+                flash(output_msg, 'error')
+                return redirect(url_for('signup'))
+
+            # if re.match(reg, password):
+            #     print("Password is good!")
+            # else:
+            #     print("UNSAFE Password!")
+
+            encrypted_pwd = bcrypt.generate_password_hash(password).decode('utf-8')
             session['password'] = encrypted_pwd
 
             # session['username'] = username

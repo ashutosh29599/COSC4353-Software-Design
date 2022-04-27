@@ -1,0 +1,8 @@
+2022-04-26 19:42:31.287448:
+SELECT * FROM customer WHERE username = 'asdfg';
+INSERT INTO customer VALUES ('bf5IugQwagwndzpr', '' , 'asdfg', '$2b$12$rYhW.b3hmU4a/OrhSIycFOkJzV4BLCet3qGFpgHkrzY4npAr.9jWS')
+
+2022-04-26 19:42:39.977531:
+SELECT password FROM customer WHERE username = 'asdfg';
+SELECT customerid FROM customer WHERE username = 'asdfg';
+

@@ -1,0 +1,97 @@
+2022-04-25 12:40:53.337483:
+SELECT * FROM customer WHERE username = 'monday';
+INSERT INTO customer VALUES ('J48n1BTeICoFq082', '' , 'monday', '$2b$12$KnFXgWbU72c9r/pJ5VDjMuS4bhp4OXqa9RiPCppUjx0aF6FnZPney')
+
+2022-04-25 12:41:02.636715:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:41:10.362698:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:42:09.429290:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+INSERT INTO user_details VALUES ('8zxmqrciErtUcN77', 'J48n1BTeICoFq082', 'Monday ', '1234 Something St', '', 'Houston', 'VA', '77001')
+SELECT customerid FROM customer WHERE username = 'monday';
+
+2022-04-25 12:42:14.166534:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:42:14.176538:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:42:28.201094:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:42:33.902132:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT orderid FROM orders WHERE customerid = 'J48n1BTeICoFq082';
+SELECT state_ FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:42:42.553241:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('4o4C47aLFsdZBwCt', 'J48n1BTeICoFq082', '1234 Something St, Houston, VA, 77001', 15500, NOW(), '2022-04-28', 1.74, 26970.0);
+
+2022-04-25 12:42:48.493787:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:42:48.499785:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:42:52.718789:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT orderid FROM orders WHERE customerid = 'J48n1BTeICoFq082';
+SELECT state_ FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:43:00.211188:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('NYToCATMq5ixGGDv', 'J48n1BTeICoFq082', '1234 Something St, Houston, VA, 77001', 1500, NOW(), '2022-04-27', 1.725, 2587.5);
+
+2022-04-25 12:43:01.700158:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:44:20.188519:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+UPDATE user_details SET cust_name = 'Monday', address1 = '789 Nothing St', address2 = 'Apt 1234', city = 'Houston', state_ = 'AR', zipcode = '77007' WHERE customerid = 'J48n1BTeICoFq082';
+SELECT customerid FROM customer WHERE username = 'monday';
+
+2022-04-25 12:44:22.051517:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:44:22.060516:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:44:36.385682:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT orderid FROM orders WHERE customerid = 'J48n1BTeICoFq082';
+SELECT state_ FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:44:38.200682:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('vs0yKTI29Pwu3q9R', 'J48n1BTeICoFq082', '789 Nothing St, Apt 1234, Houston, AR, 77007', 1500, NOW(), '2022-07-19', 1.725, 2587.5);
+
+2022-04-25 12:44:39.678132:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'J48n1BTeICoFq082';
+
+2022-04-25 12:50:10.451599:
+SELECT password FROM customer WHERE username = 'monday';
+SELECT customerid FROM customer WHERE username = 'monday';
+
+2022-04-25 12:59:16.213846:
+SELECT password FROM customer WHERE username = 'monday';
+SELECT customerid FROM customer WHERE username = 'monday';
+
+2022-04-25 12:59:54.922572:
+SELECT customerid FROM customer WHERE username = 'monday';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'J48n1BTeICoFq082';
+UPDATE user_details SET cust_name = 'Monday', address1 = '4565 Software St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77004' WHERE customerid = 'J48n1BTeICoFq082';
+SELECT customerid FROM customer WHERE username = 'monday';
+

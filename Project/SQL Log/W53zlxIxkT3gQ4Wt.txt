@@ -110,3 +110,15 @@ SELECT COUNT(*) FROM user_details WHERE customerid = 'W53zlxIxkT3gQ4Wt';
 INSERT INTO user_details VALUES ('JKvLOxLXlJCCdESf', 'AkAfegFX2b095o5D', 'Ashutosh Kumar', '555 Side St', '', 'Houston', 'TX', '77007')
 SELECT customerid FROM customer WHERE username = 'nnnnnnnnnnnnnnnnnnnn';
 
+2022-04-25 12:35:07.376155:
+SELECT customerid FROM customer WHERE username = 'nnnnnnnnnnnnnnnnnnnn';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'W53zlxIxkT3gQ4Wt';
+INSERT INTO user_details VALUES ('5TwTqecSgBn8m7os', 'AkAfegFX2b095o5D', 'Ashutosh Kumar', '555 Side St', '', 'Houston', 'TX', '77007')
+SELECT customerid FROM customer WHERE username = 'nnnnnnnnnnnnnnnnnnnn';
+
+2022-04-25 12:52:08.793495:
+SELECT customerid FROM customer WHERE username = 'nnnnnnnnnnnnnnnnnnnn';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'W53zlxIxkT3gQ4Wt';
+INSERT INTO user_details VALUES ('uGjnzs2bZu5wydAR', 'AkAfegFX2b095o5D', 'Ashutosh Kumar', '555 Side St', '', 'Houston', 'TX', '77007')
+SELECT customerid FROM customer WHERE username = 'nnnnnnnnnnnnnnnnnnnn';
+
