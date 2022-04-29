@@ -1,0 +1,4 @@
+2022-04-28 17:43:33.894422:
+SELECT * FROM customer WHERE username = 'None';
+INSERT INTO customer VALUES ('vsR15Upa4UAcgjKm', '' , 'None', '$2b$12$KXtcirgPXfe.kmNEC1mj4.ddu7LHpDQ38EuLIzE7/KvuslvTLsZuC')
+

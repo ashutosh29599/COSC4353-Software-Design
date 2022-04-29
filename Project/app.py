@@ -79,6 +79,8 @@ def index():
             password = request.form.get('password')
 
             if username == "" or password == "":
+                output_msg = "You need to enter both, username and password!"
+                flash(output_msg, 'error')
                 return redirect(url_for("index"))
 
             command = f"SELECT password FROM customer\
@@ -158,7 +160,8 @@ def index():
 def signup():
     if request.method == "POST":
         if request.form.get('register') == 'Register':
-            session['username'] = request.form.get('username')
+            username = request.form.get('username')
+            session['username'] = username
             password = request.form.get('password')
             
             # Password Validation
@@ -191,15 +194,16 @@ def signup():
             # Check username for duplicates
             command = f"SELECT * FROM customer \
                         WHERE username = '{session['username']}';"
+
             temp = " ".join(command.split()) + '\n'
             log_txt = temp
             cursor.execute(command)
             table_data = len(cursor.fetchall()) # number of users with the same usernames; Max should be 1
 
             if table_data != 0:
-                output_msg = "This username is already in use by another user.\
+                already_exists = "This username is already in use by another user.\
                     Please choose another username."
-                flash(output_msg, 'error')
+                flash(already_exists, 'error')
                 return render_template("signup.html")
             # END check username
 
@@ -351,7 +355,7 @@ def client_profile_management():
 
             cursor.execute(command)
             num = cursor.fetchall()[0][0]
-            print(num)
+            # print(num)
 
             if num == 0: # No previous address
                 session['user_id'] = genID(16)

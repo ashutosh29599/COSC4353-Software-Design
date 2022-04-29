@@ -28,3 +28,31 @@ INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofr
 SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
 INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('UTb90gQJ69AFdjVp', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
 
+2022-04-29 14:18:33.801105:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('qaCbiRs1qcU4fRln', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
+
+2022-04-29 14:20:48.911274:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('qNObG4moeX4kQ7VH', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
+
+2022-04-29 14:21:24.395215:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('FJB6LrdlZyAMNpsC', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
+
+2022-04-29 14:21:48.170992:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('fqJRKphwYBhi91Oi', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
+
+2022-04-29 14:21:55.781031:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('KRz9Is3PHTzkA4Zd', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
+
+2022-04-29 14:22:44.561570:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('vrXvZyU65k2IjW7T', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
+
+2022-04-29 14:24:26.073335:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AFFneHeRLBXoRpxe';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('Y4TWcX431MyIjgPL', 'AFFneHeRLBXoRpxe', '12345 Street St, Houston, TX, 77005', 1500, NOW(), '2030-05-29', 1.71, 2000);
+

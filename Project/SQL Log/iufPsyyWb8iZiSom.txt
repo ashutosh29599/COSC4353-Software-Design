@@ -1,0 +1,4 @@
+2022-04-29 13:53:26.853529:
+SELECT * FROM customer WHERE username = 'unittest834401';
+INSERT INTO customer VALUES ('iufPsyyWb8iZiSom', '' , 'unittest834401', '$2b$12$zLc/6Wk6dshhHnioLRi9teRan45VW7xbIvYaDXkdeVNZR/2Lx0bbe')
+

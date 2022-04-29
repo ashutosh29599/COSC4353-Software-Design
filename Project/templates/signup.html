@@ -48,15 +48,26 @@
             <div class="flash_msg">
                 {% with messages = get_flashed_messages(with_categories=true) %}
                     {% for category, output_msg in messages %}
-                    <!-- <div class="alert {{category}}"> <p>{{ output_msg }}</p> </div> -->
-                        <div class="alert {{category}}">
-                            {% for msg in output_msg %}
-                                <p>{{ msg }}</p> 
-                            {% endfor %}
-                        </div>
+                        {% if output_msg is string %}
+                            <div class="alert {{category}}"> <p>{{ output_msg }}</p> </div>
+                        {% else %}
+                            <div class="alert {{category}}">
+                                {% for msg in output_msg %}
+                                    <p>{{ msg }}</p> 
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     {% endfor %}
                 {% endwith %}
             </div>
+
+            <!-- <div class="flash_msg">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% for category, already_exists in messages %}
+                    <div class="alert {{category}}"> <p>{{ already_exists }}</p> </div>
+                    {% endfor %}
+                {% endwith %}
+            </div> -->
         </div>
     </body>
 </html>

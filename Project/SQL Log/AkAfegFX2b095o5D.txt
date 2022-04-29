@@ -3064,3 +3064,448 @@ SELECT customerid FROM customer WHERE username = 'ashutosh';
 SELECT password FROM customer WHERE username = 'ashutosh';
 SELECT customerid FROM customer WHERE username = 'ashutosh';
 
+2022-04-29 13:44:49.901578:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:47:29.005257:
+SELECT password FROM customer WHERE username = 'ashutosh';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 13:48:01.717527:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:48:10.624470:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:48:41.098129:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:50:20.082187:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:50:33.019490:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:51:06.735377:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:51:13.986300:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:53:26.172597:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:55:30.852753:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 13:55:30.856752:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:57:17.645717:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 13:57:17.650718:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:58:09.164476:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 13:58:09.169475:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:59:15.242382:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 13:59:15.248383:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 13:59:31.340870:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 13:59:31.345874:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:02:15.043403:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:02:15.048403:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:02:43.891129:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:02:43.896130:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:06:38.386010:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:06:38.393009:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:06:38.414011:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:07:52.282561:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:07:52.289566:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:08:01.631788:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:08:01.647788:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:06.289192:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:06.302116:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:10.581234:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:28.528906:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:09:28.536907:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:28.543904:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:38.244039:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:09:38.251038:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:38.262040:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:49.715532:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:09:49.727272:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:09:49.734354:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:10:41.215226:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:10:41.221227:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:10:41.235226:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:10:41.258225:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:12:13.709717:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:12:13.714713:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:12:13.731717:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:12:13.748712:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:12:21.188099:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:12:21.194100:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:12:21.206101:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:12:21.212102:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:12:21.228102:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:16:42.670349:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:16:42.680378:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:16:42.693355:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:16:42.699354:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:16:42.713354:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:18:12.926978:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+INSERT INTO orders (orderid, customerid, custlocation, gallonsrequested, dateofrequest, deliverydate, price_p_gal, price) VALUES ('kbh6o0mw514NrUSl', 'AkAfegFX2b095o5D', '555 Side St, Houston, TX, 77007', 1500, NOW(), '2022-04-30', 1.695, 2542.5);
+
+2022-04-29 14:18:33.786053:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:18:33.809059:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:18:33.819087:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:18:33.824056:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:18:33.838085:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:19:32.573367:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:20:48.896273:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:20:48.918274:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:20:48.930273:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:20:48.935274:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:20:48.949275:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:20:48.963273:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:24.381213:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:21:24.401215:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:24.411211:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:24.416242:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:24.430237:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:24.444246:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:48.153992:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:21:48.178991:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:48.189990:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:48.194991:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:48.207991:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:48.218990:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:55.763032:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:21:55.789032:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:55.802032:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:55.808033:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:55.828033:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:21:55.845032:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:22:44.545571:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:22:44.569571:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:22:44.586573:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:22:44.593570:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:22:44.612571:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:22:44.628570:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:24:26.055336:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT COUNT(*) FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+UPDATE user_details SET cust_name = 'Ashutosh Kumar', address1 = '555 Side St', address2 = '', city = 'Houston', state_ = 'TX', zipcode = '77007' WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+
+2022-04-29 14:24:26.081335:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:24:26.096338:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:24:26.101337:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT orderid FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+SELECT state_ FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:24:26.119336:
+SELECT customerid FROM customer WHERE username = 'ashutosh';
+SELECT dateofrequest, deliverydate, gallonsrequested, custlocation, price_p_gal, price FROM orders WHERE customerid = 'AkAfegFX2b095o5D';
+
+2022-04-29 14:24:26.138335:
+SELECT address1, address2, city, state_, zipcode FROM user_details WHERE customerid = 'AkAfegFX2b095o5D';
+

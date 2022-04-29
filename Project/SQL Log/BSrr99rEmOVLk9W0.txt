@@ -1,0 +1,384 @@
+2022-04-27 19:44:39.667845:
+SELECT * FROM customer WHERE username = 'unittest';
+INSERT INTO customer VALUES ('BSrr99rEmOVLk9W0', '' , 'unittest', '$2b$12$vkW1fGrSuaMnXjT0Fe6sFux77x6oH5FT3DsnNVuIyQsSYZ2YCz1kS')
+
+2022-04-27 19:53:22.523199:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 19:53:39.848529:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 19:57:08.807961:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 19:57:12.214357:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 19:58:31.970767:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 19:58:54.977771:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 19:59:32.703899:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:01:59.264765:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:03:57.631558:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:04:47.694984:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:05:46.351545:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:06:37.517890:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:06:49.772846:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:07:11.951351:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:07:33.725539:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:08:37.910720:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:08:57.743707:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:09:19.067145:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-27 20:09:26.271711:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:34:24.852532:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:34:37.375906:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:36:52.377147:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:37:19.551384:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:37:51.461238:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:38:46.365298:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:39:06.700416:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:39:26.363834:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:40:17.204714:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:40:41.333733:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:41:23.802318:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:41:48.875843:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:42:09.294281:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:42:25.001727:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:43:33.651833:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:44:01.526542:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:44:13.646427:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:44:23.171847:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:45:13.784613:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:45:28.966257:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:45:49.711875:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:46:47.338442:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:49:56.586855:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:52:31.752077:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:52:53.196855:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:53:10.790515:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 17:55:52.928069:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:00:56.983549:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:02:52.153814:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:04:29.313548:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:04:57.224247:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:05:06.207544:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:05:43.603383:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:08:56.958317:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:11:52.712795:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:12:55.663899:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:13:10.800235:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:13:18.588896:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:14:18.456318:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:14:26.499930:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-28 18:14:36.032207:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:42:19.420792:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:42:34.187829:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:44:50.332054:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:48:02.157623:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:48:11.066467:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:48:41.530558:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:50:20.524709:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:50:33.465673:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:51:07.180722:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:51:14.423585:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:53:26.606785:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:55:31.290308:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:57:18.085400:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:58:09.602473:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:59:15.692002:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 13:59:31.789133:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:02:15.482757:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:02:44.348713:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:06:38.862523:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:07:52.731826:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:08:02.104280:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:09:28.994393:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:09:38.708580:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:09:50.180665:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:10:41.702307:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:12:14.189520:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:12:21.666176:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:16:43.148503:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:18:34.271192:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:20:49.403611:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:21:24.903565:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:21:48.657208:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:21:56.282990:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:22:45.074103:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
+2022-04-29 14:24:26.579332:
+SELECT password FROM customer WHERE username = 'unittest';
+SELECT customerid FROM customer WHERE username = 'unittest';
+
